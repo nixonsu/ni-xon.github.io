@@ -12,11 +12,24 @@ body {
 
 main {
   flex: 8;
+  background-color: #121212;
+  color: white;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex: 1;
+}
+
+.sidebar li {
+  list-style-type: none;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
