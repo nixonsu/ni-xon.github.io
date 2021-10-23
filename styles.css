@@ -2,34 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  align-items: stretch;
+  color: black;
+  background-color: #ecedeb;
 }
 
 main {
   width: 85%;
   left: 15%;
-  background-color: #121212;
-  color: white;
   position: absolute;
 }
 
 nav {
-  height: 100%;
   width: 15%;
   position: fixed;
-  background-color: white;
-  text-align: center;
 }
 
 .sidebar-container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .sidebar-content {
@@ -42,6 +35,10 @@ nav {
   list-style-type: none;
 }
 
-.section-container {
+.section {
+  padding: 20px;
+}
+
+.full-height {
   height: 100vh;
 }
