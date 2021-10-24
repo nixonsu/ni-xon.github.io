@@ -52,7 +52,14 @@ main {
 }
 
 main > * {
-  width: 50%;
+  width: 70%;
+}
+
+footer {
+  flex: 1;
+  font-size: var(--font-size-4);
+  justify-content: center;
+  padding: 16px;
 }
 
 /* Nav Bar */
@@ -68,7 +75,7 @@ nav {
 }
 
 .nav-content {
-  width: 50%;
+  width: 30%;
   gap: 30px;
 }
 
@@ -100,6 +107,9 @@ nav a:hover {
 
 .tech-stack-category {
   justify-content: center;
+  background-color: black;
+  border-radius: 12px;
+  padding: 13px;
   gap: 10px;
 }
 
