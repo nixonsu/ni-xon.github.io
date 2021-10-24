@@ -83,13 +83,15 @@ nav a:hover {
 
 h1 {
   height: 32px;
+  color: white;
+  background-color: var(--colour-bg-dark);
 }
 /* Blinking Cursor */
 h1 span {
   height: 32px;
   margin-bottom: -4px;
   width: 2px;
-  background: var(--text-color);
+  background: white;
   opacity: 0;
   display: inline-block;
   animation: blink 0.5s linear infinite alternate;

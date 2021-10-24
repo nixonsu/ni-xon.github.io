@@ -44,7 +44,7 @@ const target = document.body.querySelector(".typewrite");
 const speed = target.getAttribute("data-speed");
 
 // Constructing Queue
-let listofPhrases = JSON.parse(target.getAttribute("data-type"));
+let listofPhrases = ["Hello there", "I'm Nixon"];
 let phrasesQueue = new Queue();
 listofPhrases.forEach((phrase) => {
   phrasesQueue.enqueue(phrase);
@@ -54,18 +54,12 @@ const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
 // Type effect onload
 window.addEventListener("load", async () => {
-  let phraseToType = phrasesQueue.peek();
-  target.classList.toggle("typing");
-  await typeOut(target, phraseToType, speed);
-  target.classList.toggle("typing");
-});
-
-// Event listener for hover to play typewriter effect
-target.addEventListener("mouseenter", async function () {
-  if (!target.classList.contains("typing")) {
+  while (true) {
+    let phraseToType = phrasesQueue.peek();
     target.classList.toggle("typing");
+    await typeOut(target, phraseToType, speed);
+    await timer(1000);
     await backSpace(target, speed, phrasesQueue);
-
     target.classList.toggle("typing");
   }
 });
@@ -73,7 +67,7 @@ target.addEventListener("mouseenter", async function () {
 // Typewriter effect 2 components: backSpace and typeOut
 async function backSpace(target, speed, phrasesQueue) {
   const originalWord = String(target.childNodes[0].nodeValue);
-  for (let i = originalWord.length; i >= 1; i--) {
+  for (let i = originalWord.length; i >= 0; i--) {
     let currentText = String(target.childNodes[0].nodeValue);
     target.childNodes[0].nodeValue = currentText.substring(0, i);
     await timer(speed);
@@ -82,14 +76,12 @@ async function backSpace(target, speed, phrasesQueue) {
   let phraseToEnqueue = phrasesQueue.peek();
   phrasesQueue.dequeue();
   phrasesQueue.enqueue(phraseToEnqueue);
-
-  let phraseToType = phrasesQueue.peek();
-  await typeOut(target, phraseToType, speed);
 }
 
 async function typeOut(target, phrase, speed) {
-  for (let i = 1; i < phrase.length + 1; i++) {
+  for (let i = 0; i < phrase.length + 1; i++) {
     target.childNodes[0].nodeValue = phrase.substring(0, i);
+    console.log(target.childNodes[0].nodeValue);
     await timer(speed);
   }
 }
