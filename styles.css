@@ -81,6 +81,34 @@ nav a:hover {
   gap: 20px;
 }
 
+#about-container {
+  gap: 20px;
+  height: 100%;
+}
+
+.tech-stack-category {
+  justify-content: center;
+  gap: 10px;
+}
+
+.tech-stack-row {
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.icon-text-container {
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+i {
+  color: white;
+  font-size: 90px;
+}
+
+/* Typewrite effect */
 h1 {
   height: 32px;
   color: white;
