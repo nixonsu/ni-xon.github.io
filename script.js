@@ -44,7 +44,7 @@ const target = document.body.querySelector(".typewrite");
 const speed = target.getAttribute("data-speed");
 
 // Constructing Queue
-let listofPhrases = ["Hello there", "I'm Nixon"];
+let listofPhrases = ["Hello there,", "I'm Nixon"];
 let phrasesQueue = new Queue();
 listofPhrases.forEach((phrase) => {
   phrasesQueue.enqueue(phrase);

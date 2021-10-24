@@ -14,6 +14,10 @@ html {
   --colour-main-dark: #6b7c95;
   --colour-main-light: #f4f4f5;
   --colour-bg-dark: #181818;
+  --font-size-1: 60px;
+  --font-size-2: 36px;
+  --font-size-3: 24px;
+  --font-size-4: 20px;
 }
 
 /* Nav bar jump offset */
@@ -48,7 +52,7 @@ main {
 }
 
 main > * {
-  width: 70%;
+  width: 50%;
 }
 
 /* Nav Bar */
@@ -59,15 +63,23 @@ nav {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  gap: 30px;
+
   background-color: var(--colour-bg-dark);
 }
 
-nav a {
+.nav-content {
+  width: 50%;
+  gap: 30px;
+}
+
+.nav-content a {
+  text-align: center;
   cursor: pointer;
   text-decoration: none;
   background-color: transparent;
   color: var(--colour-main-dark);
+  font-size: var(--font-size-4);
+  flex: 1;
 }
 
 nav a:hover {
@@ -108,15 +120,25 @@ i {
   font-size: 90px;
 }
 
+p {
+  font-size: var(--font-size-3);
+  line-height: 130%;
+}
+
+h2 {
+  font-size: var(--font-size-2);
+}
+
 /* Typewrite effect */
 h1 {
-  height: 32px;
+  height: var(--font-size-1);
+  font-size: var(--font-size-1);
   color: white;
   background-color: var(--colour-bg-dark);
 }
 /* Blinking Cursor */
 h1 span {
-  height: 32px;
+  height: var(--font-size-1);
   margin-bottom: -4px;
   width: 2px;
   background: white;
