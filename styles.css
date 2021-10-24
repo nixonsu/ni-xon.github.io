@@ -80,3 +80,26 @@ nav a:hover {
   align-items: flex-start;
   gap: 20px;
 }
+
+h1 {
+  height: 32px;
+}
+/* Blinking Cursor */
+h1 span {
+  height: 32px;
+  margin-bottom: -4px;
+  width: 2px;
+  background: var(--text-color);
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
