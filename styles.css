@@ -141,7 +141,7 @@ ul > li {
   grid-auto-rows: 360px;
 }
 
-.card {
+.projects-card {
   border: solid 2px var(--colour-white);
   border-radius: 6px;
 }
