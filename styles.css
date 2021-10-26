@@ -153,6 +153,7 @@ ul > li {
 }
 
 .image-container {
+  position: relative;
 }
 
 img {
@@ -164,6 +165,31 @@ img {
 
 img:hover {
   opacity: 0.5;
+}
+
+img:hover .button-container {
+  visibility: visible;
+}
+
+.button-container {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 3em;
+}
+
+.card-button {
+  border: none;
+}
+
+.fa-github,
+.fa-external-link-alt {
+  font-size: 3em;
+  color: var(--colour-bg-dark);
 }
 
 .p-card {
