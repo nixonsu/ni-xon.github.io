@@ -70,7 +70,7 @@ nav {
   position: fixed;
   justify-content: center;
   align-items: center;
-
+  z-index: 10000;
   background-color: var(--colour-bg-dark);
 }
 
@@ -133,6 +133,7 @@ ul > li {
   gap: 15px;
 }
 
+/* PROJECTS */
 #projects {
   gap: 20px;
 }
@@ -214,6 +215,7 @@ img {
 
 .badge-container {
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .badge {
@@ -222,6 +224,7 @@ img {
   border-radius: 12px;
   padding: 6px;
 }
+/* END PROJECTS */
 
 footer {
   padding: 12px;
