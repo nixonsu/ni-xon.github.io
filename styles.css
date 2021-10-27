@@ -160,19 +160,19 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
-img:hover {
+.image-container:hover .button-container {
+  opacity: 1;
+}
+
+.image-container:hover img {
   opacity: 0.5;
 }
 
-img:hover .button-container {
-  visibility: visible;
-}
-
 .button-container {
-  visibility: hidden;
   position: absolute;
   top: 0;
   justify-content: center;
@@ -180,16 +180,27 @@ img:hover .button-container {
   height: 100%;
   width: 100%;
   gap: 3em;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.button-container .card-button:hover {
+  opacity: 0.7;
 }
 
 .card-button {
   border: none;
 }
 
+.card-button {
+  background-color: transparent;
+}
+
 .fa-github,
 .fa-external-link-alt {
   font-size: 3em;
   color: var(--colour-bg-dark);
+  background-color: transparent;
 }
 
 .p-card {
