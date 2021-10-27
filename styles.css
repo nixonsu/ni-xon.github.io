@@ -102,6 +102,7 @@ nav a:hover {
 
 #about-container {
   gap: 20px;
+  min-height: 100vh;
 }
 
 ul {
@@ -170,7 +171,7 @@ img {
 }
 
 .image-container:hover img {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .button-container {
@@ -200,8 +201,9 @@ img {
 .fa-github,
 .fa-external-link-alt {
   font-size: 3em;
-  color: var(--colour-bg-dark);
+  color: var(--colour-main-light);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .p-card {
@@ -220,9 +222,10 @@ img {
 
 .badge {
   font-size: var(--font-size-5);
-  border: solid 1px var(--colour-main-light);
+  border: solid 1px var(--colour-bg-dark);
+  background-color: var(--colour-bg-dark);
   border-radius: 12px;
-  padding: 6px;
+  padding: 8px;
 }
 /* END PROJECTS */
 
