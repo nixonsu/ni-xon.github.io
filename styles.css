@@ -117,7 +117,7 @@ ul > li {
 }
 
 .tech-stack-category {
-  margin-top: 4em;
+  margin-top: 150px;
   justify-content: center;
   gap: 10px;
 }
@@ -192,14 +192,11 @@ img {
 
 .card-button {
   border: none;
-}
-
-.card-button {
   background-color: transparent;
 }
 
-.fa-github,
-.fa-external-link-alt {
+.card-button .fa-github,
+.card-button .fa-external-link-alt {
   font-size: 3em;
   color: var(--colour-main-light);
   background-color: transparent;
@@ -229,9 +226,45 @@ img {
 }
 /* END PROJECTS */
 
-footer {
-  padding: 12px;
+#contact {
+  gap: 20px;
+}
+
+#contact-container {
   justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.icon-row {
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+}
+
+.contact-icon {
+  font-size: 90px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.contact-icon:hover {
+  opacity: 0.3;
+}
+
+footer {
+  padding: 24px;
+  font-size: var(--font-size-5);
+  justify-content: center;
+  background-color: var(--colour-black);
+}
+
+footer span {
+  color: var(--colour-main-dark);
 }
 
 i {
