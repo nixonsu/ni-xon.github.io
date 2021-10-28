@@ -4,10 +4,252 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Custom Styles -->
     <link rel="stylesheet" href="styles.css" />
-    <title>Portfolio Website</title>
+
+    <!-- Devicon CSS Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    
+    <!-- Webpage Icon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!-- JS -->
+    <script src="./script.js" defer></script>
+
+    <!-- Font Awesome API -->
+    <script src="https://kit.fontawesome.com/fe3889e50c.js" crossorigin="anonymous"></script>
+
+    <!-- Title -->
+    <title>Nixon Sovyrak Uch</title>
   </head>
   <body>
-    <h1>WORK IN PROGRESS</h1>
+    <nav class="flex-row">
+      <div class="nav-content flex-row">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a></li>
+        <a href="#contact">Contact</a></li>
+        <a href="https://pdfhost.io/v/5g3gbrKhO_nixon_resume" target="_blank">Resume</a></li>
+      </div>
+    </nav>
+    <main class="flex-column">
+      <div id="intro" class="section full-height">
+        <div id="intro-container" class="flex-column">
+          <!-- TYPE WRITE EFFECT -->
+          <h1
+          class="typewrite"
+          data-speed="75"
+          > <span></span>
+          </h1>
+        </div>
+      </div>
+      <div id="about">
+        <div id="about-container" class="flex-column">
+          <h2>About Me</h2>
+
+          <p>
+            Final year Computer Science/Commerce student, at Monash University, with a passion for solving challenging problems with a data-driven approach and using software/web technologies to build creative solutions.
+          </p>
+
+          <p>Areas of interest include: </p>
+          <ul>
+            <li>Full-stack Development</li>
+            <li>Data Analytics & Visualisation</li>
+            <li>Machine Learning & AI</li>
+            <li>Data Engineering</li>
+          </ul>
+          <div class="tech-stack-category flex-column">
+            <div class="tech-stack-row flex-row">
+              <div class="icon-text-container flex-column">
+                <i class="devicon-python-plain"></i>
+                <p>Python</p>
+              </div>
+              <div class="icon-text-container flex-column">
+                <i class="devicon-r-original"></i>
+                <p>R</p>
+              </div>
+              <div class="icon-text-container flex-column">
+                <i class="devicon-mysql-plain"></i>              
+                <p>MySQL</p>
+              </div>
+              <div class="icon-text-container flex-column">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tableau</title><path d="M11.654.174V2.377H9.682v.58h1.972V5.16h.696V2.957h1.97v-.58h-1.97V.174h-.348zm6.03 2.262l-.002 1.623v1.623h-2.957v.927h2.957v3.188H18.725l.011-1.582.02-1.576 1.465-.02 1.46-.01v-.927H18.728V2.436h-.522zm-12.407.06V5.686H2.291v.925H5.277V9.801h.985V6.61h3.013v-.925H6.262V2.496H5.77zm6.086 5.27v3.593H8.06v1.188h3.304v3.596h1.28v-3.596H15.953v-1.188H12.643V7.766h-.637zm9.721 1.55v2.221h-2.012v.811h2.012v2.261h.887v-2.261H24v-.811h-2.029V9.317h-.422zm-19.111.131V11.621H0v.621H1.973v2.194H2.64v-2.194h2v-.62H2.609V9.446h-.318zm15.709 4.516v3.254h-3.016v.927h3.016v3.217h1.072v-3.216H21.74v-.928H18.754v-3.254h-.533zm-12.463.008v3.246H2.262v.928h2.957v3.189H6.32v-3.189h2.955v-.928H6.32V13.97h-.55zm6.316 4.578l.002 1.103v1.1H9.566v.812h1.971v2.262h.928l.012-1.119.017-1.143H14.463v-.812h-2V18.549h-.465z"/></svg>
+                <p>Tableau</p>
+              </div>
+              <div class="icon-text-container flex-column">
+                <i class="devicon-html5-plain"></i>
+                <p>HTML</p>
+              </div>
+              <div class="icon-text-container flex-column">
+                <i class="devicon-css3-plain"></i>
+                <p>CSS</p>
+              </div>
+              <div class="icon-text-container flex-column">
+                <i class="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="icon-text-container flex-column">
+                <i class="devicon-git-plain"></i>              
+                <p>Git</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div id="projects" class="flex-column">
+        <h2>Projects</h2>
+        <div id="projects-container" class="flex-column">
+          <div class="projects-grid">
+            <div class="projects-card flex-column">
+              <div class="image-container">
+                <img src="./images/home.png" alt="">
+                <div class="button-container flex-row">
+                  <button class="card-button" onclick="window.open('https://github.com/ni-xon/home', '_blank')">
+                    <i class="fab fa-github"></i>
+                  </button>
+                  <button class="card-button" onclick="window.open('https://www.nixonsu.com/home/', '_blank')">
+                    <i class="fas fa-external-link-alt"></i>
+                  </button>
+                </div>
+
+              </div>
+              <div class="text-container flex-column">
+                <h3>Home</h3>
+                <p class="p-card">A minimalistic place to work and relax to lofi.</p>
+              </div>
+              <div class="badge-container flex-row">
+                <div class="badge">HTML/CSS</div>
+                <div class="badge">JavaScript</div>
+              </div>
+            </div>
+
+            <div class="projects-card flex-column">
+              <div class="image-container">
+                <img src="./images/bukky.png" alt="">
+                <div class="button-container flex-row">
+                  <button class="card-button" onclick="window.open('https://github.com/ni-xon/bukky', '_blank')">
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+
+              </div>
+              <div class="text-container flex-column">
+                <h3>Bukky</h3>
+                <p class="p-card">A 2D turn-based strategy game played between 2-4 players.</p>
+              </div>
+              <div class="badge-container flex-row">
+                <div class="badge">Python</div>
+                <div class="badge">Pygame</div>
+              </div>
+            </div>
+
+            <div class="projects-card flex-column">
+              <div class="image-container">
+                <img src="./images/data-visualisation.png" alt="">
+                <div class="button-container flex-row">
+                  <button class="card-button" onclick="window.open('https://github.com/ni-xon/data-visualisation', '_blank')">
+                    <i class="fab fa-github"></i>
+                  </button>
+                  <button class="card-button" onclick="window.open('https://www.nixonsu.com/data-visualisation/', '_blank')">
+                    <i class="fas fa-external-link-alt"></i>
+                  </button>
+                </div>
+
+              </div>
+              <div class="text-container flex-column">
+                <h3>Data Visualisation</h3>
+                <p class="p-card">Data visualisation about earth's astronauts.</p>
+              </div>
+              <div class="badge-container flex-row">
+                <div class="badge">HTML/CSS</div>
+                <div class="badge">JavaScript</div>
+                <div class="badge">Python</div>
+                <div class="badge">Vega-lite</div>
+                <div class="badge">Pandas</div>
+              </div>
+            </div>
+
+            <div class="projects-card flex-column">
+              <div class="image-container">
+                <img src="./images/spell-corrector.png" alt="">
+                <div class="button-container flex-row">
+                  <button class="card-button" onclick="window.open('https://github.com/ni-xon/spell-corrector', '_blank')">
+                    <i class="fab fa-github"></i>
+                  </button>
+                  <button class="card-button" onclick="window.open('https://share.streamlit.io/ni-xon/spell_corrector/app.py', '_blank')">
+                    <i class="fas fa-external-link-alt"></i>
+                  </button>
+                </div>
+
+              </div>
+              <div class="text-container flex-column">
+                <h3>Spell Corrector</h3>
+                <p class="p-card">An interactive web application that performs spell correction.</p>
+              </div>
+              <div class="badge-container flex-row">
+                <div class="badge">Python</div>
+                <div class="badge">Streamlit</div>
+                <div class="badge">Symspell</div>
+              </div>
+            </div>
+
+            <div class="projects-card flex-column">
+              <div class="image-container">
+                <img src="./images/portfolio.png" alt="">
+                <div class="button-container flex-row">
+                  <button class="card-button" onclick="window.open('https://github.com/ni-xon/ni-xon.github.io', '_blank')">
+                    <i class="fab fa-github"></i>
+                  </button>
+                  <a href="#">
+                    <button class="card-button">
+                      <i class="fas fa-external-link-alt"></i>
+                    </button>
+                  </a>
+                </div>
+
+              </div>
+              <div class="text-container flex-column">
+                <h3>Portfolio</h3>
+                <p class="p-card">This portfolio website, built from scratch.</p>
+              </div>
+              <div class="badge-container flex-row">
+                <div class="badge">HTML/CSS</div>
+                <div class="badge">JavaScript</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="flex-column full-height">
+        <div id="contact-container" class="flex-column">
+          <div class="icon-row flex-row">
+
+
+            <div class="icon-text-container flex-column">
+              <button class="icon-button" onclick="window.open('https://github.com/ni-xon', '_blank')">
+                <i class="contact-icon fab fa-github"></i>
+              </button>
+            </div>
+            <div class="icon-text-container flex-column">
+              <button class="icon-button" onclick="window.open('https://www.linkedin.com/in/nixon-uch-9ba1711b3/', '_blank')">
+                <i class="contact-icon fab fa-linkedin"></i>
+              </button>
+            </div>
+            <div class="icon-text-container flex-column">
+              <a href="mailto:nixon.s.uch@gmail.com">
+                <button class="icon-button">
+                  <i class="contact-icon far fa-envelope"></i>
+                </button>
+              </a>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex-row">
+      <span>© 2021 Nixon Sovyrak Uch</span>
+    </footer>
   </body>
 </html>
