@@ -47,7 +47,7 @@ const speed = target.getAttribute("data-speed");
 let listofPhrases = [
   "Hi, nice to meet you",
   "I'm Nixon,",
-  "A student, software developer and a data analyst",
+  "A student, developer and analyst",
 ];
 let phrasesQueue = new Queue();
 listofPhrases.forEach((phrase) => {

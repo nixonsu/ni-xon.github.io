@@ -81,7 +81,7 @@ nav {
 
 .nav-content {
   min-width: 40%;
-  gap: 30px;
+  gap: 20px;
 }
 
 .nav-content a {
@@ -180,6 +180,7 @@ ul > li {
 /* PROJECTS */
 #projects {
   gap: 20px;
+  align-items: center;
 }
 
 .projects-grid {
