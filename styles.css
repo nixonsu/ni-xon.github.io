@@ -304,7 +304,7 @@ footer {
 }
 
 footer span {
-  color: var(--colour-main-dark);
+  color: var(--colour-main-light);
 }
 
 i {
@@ -346,4 +346,12 @@ h1 span {
   100% {
     opacity: 1;
   }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colour-white);
 }
