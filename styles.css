@@ -46,7 +46,7 @@ html {
 }
 
 .full-height {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -55,6 +55,7 @@ body {
 }
 
 main {
+  justify-content: center;
   align-items: center;
   gap: 100px;
 }
@@ -70,7 +71,7 @@ svg {
 /* Nav Bar */
 nav {
   height: 70px;
-  width: 100vw;
+  min-width: 100vw;
   position: fixed;
   justify-content: center;
   align-items: center;
@@ -79,7 +80,7 @@ nav {
 }
 
 .nav-content {
-  width: 40%;
+  min-width: 40%;
   gap: 30px;
 }
 
@@ -119,6 +120,10 @@ nav {
 
 nav a:hover {
   color: var(--colour-main-light);
+}
+
+#intro {
+  justify-content: center;
 }
 
 #intro-container {
@@ -266,6 +271,8 @@ img {
 /* END PROJECTS */
 
 #contact {
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -283,6 +290,16 @@ img {
 .icon-button {
   border: none;
   background-color: transparent;
+}
+
+.icon-container {
+  transform: scale(1);
+  transition: transform 0.1s;
+  flex: 1;
+}
+
+.icon-container:hover {
+  transform: scale(1.1);
 }
 
 .contact-icon {
