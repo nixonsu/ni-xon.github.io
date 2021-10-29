@@ -1,2 +1,2 @@
 # ni-xon.github.io
-Portfolio Website (WIP)
+Portfolio website, built from scratch with HTML/CSS/JavaScript
