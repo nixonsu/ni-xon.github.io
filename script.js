@@ -89,3 +89,9 @@ async function typeOut(target, phrase, speed) {
     await timer(speed);
   }
 }
+
+// Mail
+function sendEmail() 
+{
+    window.location = "mailto:nixon.s.uch@gmail.com";
+}

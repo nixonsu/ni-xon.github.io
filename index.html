@@ -39,7 +39,7 @@
       </div>
     </nav>
     <main class="flex-column">
-      <div id="intro" class="section full-height">
+      <div id="intro" class="full-height flex-column">
         <div id="intro-container" class="flex-column">
           <!-- TYPE WRITE EFFECT -->
           <h1
@@ -232,24 +232,20 @@
       <div id="contact" class="flex-column full-height">
         <div id="contact-container" class="flex-column">
           <div class="icon-row flex-row">
-
-
-            <div class="icon-text-container flex-column">
+            <div class="icon-container flex-column">
               <button class="icon-button" onclick="window.open('https://github.com/ni-xon', '_blank')">
                 <i class="contact-icon fab fa-github"></i>
               </button>
             </div>
-            <div class="icon-text-container flex-column">
+            <div class="icon-container flex-column">
               <button class="icon-button" onclick="window.open('https://www.linkedin.com/in/nixon-uch-9ba1711b3/', '_blank')">
                 <i class="contact-icon fab fa-linkedin"></i>
               </button>
             </div>
-            <div class="icon-text-container flex-column">
-              <a href="mailto:nixon.s.uch@gmail.com">
-                <button class="icon-button">
-                  <i class="contact-icon far fa-envelope"></i>
-                </button>
-              </a>
+            <div class="icon-container flex-column">
+              <button class="icon-button" onclick="sendEmail();">
+                <i class="contact-icon far fa-envelope"></i>
+              </button>
             </div>
         </div>
       </div>
