@@ -45,9 +45,9 @@ const speed = target.getAttribute("data-speed");
 
 // Constructing Queue
 let listofPhrases = [
-  "Hi, nice to meet you",
-  "I'm Nixon,",
-  "A student, developer and analyst",
+  "Hi there",
+  "I'm Nixon",
+  "Currently exploring data & software engineering",
 ];
 let phrasesQueue = new Queue();
 listofPhrases.forEach((phrase) => {
@@ -91,7 +91,6 @@ async function typeOut(target, phrase, speed) {
 }
 
 // Mail
-function sendEmail() 
-{
-    window.location = "mailto:nixon.s.uch@gmail.com";
+function sendEmail() {
+  window.location = "mailto:nixon.s.uch@gmail.com";
 }
