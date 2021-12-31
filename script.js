@@ -92,5 +92,5 @@ async function typeOut(target, phrase, speed) {
 
 // Mail
 function sendEmail() {
-  window.location = "mailto:nixon.s.uch@gmail.com";
+  window.location = "mailto:nixon.uch@outlook.com";
 }
