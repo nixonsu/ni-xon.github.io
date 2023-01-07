@@ -44,11 +44,7 @@ const target = document.body.querySelector(".typewrite");
 const speed = target.getAttribute("data-speed");
 
 // Constructing Queue
-let listofPhrases = [
-  "Hi there",
-  "I'm Nixon",
-  "A software developer",
-];
+let listofPhrases = ["Hi there", "I'm Nixon", "A software developer"];
 let phrasesQueue = new Queue();
 listofPhrases.forEach((phrase) => {
   phrasesQueue.enqueue(phrase);
@@ -85,7 +81,6 @@ async function backSpace(target, speed, phrasesQueue) {
 async function typeOut(target, phrase, speed) {
   for (let i = 0; i < phrase.length + 1; i++) {
     target.childNodes[0].nodeValue = phrase.substring(0, i);
-    console.log(target.childNodes[0].nodeValue);
     await timer(speed);
   }
 }
@@ -94,3 +89,8 @@ async function typeOut(target, phrase, speed) {
 function sendEmail() {
   window.location = "mailto:nixon.uch@outlook.com";
 }
+
+// Copyright span
+document.querySelector(
+  "#copyright"
+).textContent = `© ${new Date().getUTCFullYear()} Nixon Sovyrak Uch`;
