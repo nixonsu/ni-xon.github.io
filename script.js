@@ -44,7 +44,7 @@ const target = document.body.querySelector(".typewrite");
 const speed = target.getAttribute("data-speed");
 
 // Constructing Queue
-let listofPhrases = ["Hi there", "I'm Nixon", "A software developer"];
+let listofPhrases = ["Hey", "I'm Nixon", "A software engineer", "Based in Melbourne"];
 let phrasesQueue = new Queue();
 listofPhrases.forEach((phrase) => {
   phrasesQueue.enqueue(phrase);
@@ -58,7 +58,7 @@ window.addEventListener("load", async () => {
     let phraseToType = phrasesQueue.peek();
     target.classList.toggle("typing");
     await typeOut(target, phraseToType, speed);
-    await timer(1000);
+    await timer(500);
     await backSpace(target, speed, phrasesQueue);
     target.classList.toggle("typing");
   }
@@ -93,4 +93,4 @@ function sendEmail() {
 // Copyright span
 document.querySelector(
   "#copyright"
-).textContent = `© ${new Date().getUTCFullYear()} Nixon Sovyrak Uch`;
+).textContent = `© ${new Date().getUTCFullYear()} Nixon Uch`;
